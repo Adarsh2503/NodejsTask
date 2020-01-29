@@ -1,0 +1,32 @@
+{
+  "name": "channelsubscriptionserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.5.11",
+    "nodemon": "^1.19.1",
+    "uuid": "^3.4.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "public/data/*.json",
+      "public/javascripts/*.js"
+    ],
+    "delay": "2500",
+    "env": {
+      "PORT": 4000,
+      "NODE_ENV": "development"
+    }
+  }
+}
